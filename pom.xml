@@ -174,9 +174,18 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <javaVersion>1.6</javaVersion>
+        <javaVersion>17</javaVersion>
         <!-- These are also used by javadoc plugin, see MJAVADOC-562 -->
         <maven.compiler.source>${javaVersion}</maven.compiler.source>
         <maven.compiler.target>${javaVersion}</maven.compiler.target>
     </properties>
+         
+         <distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>Github HeliumMinecraft Packages</name>
+     <url>https://maven.pkg.github.com/HeliumMinecraft/cfr</url>
+   </repository>
+</distributionManagement>
+         
 </project>
